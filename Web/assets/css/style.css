@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url(../fonts/SanFranciscoText-Light.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url(../fonts/SanFranciscoText-Italic.otf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url(../fonts/SanFranciscoText-Bold.otf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url(../fonts/SanFranciscoText-BoldItalic.otf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: "SanFrancisco", "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #42ff3e !important;
+}

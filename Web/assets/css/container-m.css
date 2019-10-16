@@ -1,0 +1,38 @@
+.content_item1
+{
+    width: 20%;
+    /* background-color: brown; */
+    height: 100%;
+}
+/* .content_item2
+{
+    border: 1px solid rgb(139, 139, 139);
+    box-sizing: border-box;
+    width:70%;
+    height: 100%;
+    margin: auto;
+} */
+
+
+
+
+.item1
+{
+    text-align: center;
+    font-size: 1rem;
+    /* background-color: #4fc08d; */
+    height: 180px;
+    line-height: 200px;
+}
+.item2
+{
+    padding: 20px;
+    /* background-color: #6e8600; */
+}
+
+p
+{
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 30px;
+}

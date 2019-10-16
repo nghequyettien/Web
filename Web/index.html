@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lập trình Python cơ bản</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/container-m.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/intro.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/end.css">
+</head>
+<body>
+<nav class="header-nav">
+    <div class="header">
+        <div class="logo">
+            <img src="assets/images/LogoTLU.jpg" height="70"/>
+        </div>
+        <div class="header-right">
+            <ul class="menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li>
+                    <a href="#">Khóa học</a>
+                    <ul class="sub-menu">
+                        <li><a href="khoahoc_python.html">Python</a></li>
+                        <li><a href="#">C++</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <div class="button-search">
+                <img src="assets/images/search.svg" style="color: #fff;" height="50px"/>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="intro">
+    <h1 class="intro_item">Chào mừng bạn đến với khóa học Python Cơ Bản</h1>
+</div>
+<div class="main" style="margin-top: 100px;">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="#">TRANG CHỦ</a>
+            <span>•</span>
+            <span class="breadcrumb-title">PYTHON CƠ BẢN</span>
+            <span>•</span>
+            <span class="breadcrumb-title">CHƯƠNG II</span>
+        </div>
+        <div class="main-content">
+            <ul class="menu-left">
+                <li class="menu-headings">
+                    <a href="#bien-python">Biến trong Python.</a>
+                    <ul class="menu-sub-headings">
+                        <li>
+                            <a href="#bienlagi">Biến là gì?</a>
+                        </li>
+                        <li>
+                            <a href="#taisaophaidungbien">Tại sao phải dùng biến?</a>
+                        </li>
+                        <li>
+                            <a href="#tenbien">Những thứ cần biết về tên biến.</a>
+                        </li>
+                        <li>
+                            <a href="#khoitaobien">Khởi tạo biến.</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-headings">
+                    <a href="#kieudulieu">Kiểu dữ liệu trong Python.</a>
+                    <ul class="menu-sub-headings">
+                        <li>
+                            <a href="#songuyen">Số Nguyên.</a>
+                        </li>
+                        <li>
+                            <a href="#sothuc">Số thực.</a>
+                        </li>
+                        <li>
+                            <a href="#chuoi">Chuỗi.</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-headings">
+                    <a href="#cacpheptoan">Các phép toán cơ bản trong Python.</a>
+                    <ul class="menu-sub-headings">
+                        <li>
+                            <a href="#sohoc">Phép toán số học.</a>
+                        </li>
+                        <li>
+                            <a href="#toanchuoi">Phép toán với chuỗi.</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-headings">
+                    <a href="#xuat">Xuất dữ liệu.</a>
+                    <ul class="menu-sub-headings">
+                        <li>
+                            <a href="#visaoprint">Vì sao cần hàm print()?</a>
+                        </li>
+                        <li>
+                            <a href="#cuphapprint">Cú pháp.</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-headings">
+                    <a href="#nhap">Nhập dữ liệu.</a>
+                    <ul class="menu-sub-headings">
+                        <li>
+                            <a href="#visaoinput">Vì sao cần hàm input()?</a>
+                        </li>
+                        <li>
+                            <a href="#cuphapinput">Cú pháp.</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-headings">
+                    <a href="#baitap">Bài tập.</a>
+                    <ul class="menu-sub-headings">
+                        <li>
+                            <a href="#tracnghiem">Trắc nghiệm.</a>
+                        </li>
+                        <li>
+                            <a href="#thuchanh">Thực hành.</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="content">
+                <div class="content-title"><h1>Khóa học python cơ bản</h1></div>
+                <div style="margin-top: 20px; padding: 20px;">
+
+                    <div class="content_item2">
+                        <div class="item1">
+                            <h1>Chương 2. Kiểu dữ liệu - Phép toán - Nhập xuất dữ liệu</h1>
+                        </div>
+                        <div class="item2">
+                            <h2 id="bien-python" style="color : #4fc08d">1. Biến Trong Python</h2><br/>
+                            <h3 id="bienlagi" style="color: #0000DD">BIẾN LÀ GÌ?</h3><br/>
+                            <p>Nếu bạn từng làm các bài toán đại số thì các bạn luôn phải chạm mặt các biến như là biến x, biến y, biến a, biến b,… Và như bạn thấy nó chả có giá trị cụ thể.</p><br/>
+                            <p>Trong lập trình, biến<i>(variable)</i> là tên của một vùng trong bộ nhớ RAM, được sử dụng để lưu trữ thông tin. Bạn có thể gán thông tin cho một biến, và có thể lấy thông tin đó ra để sử dụng. Khi một biến được khai báo, một vùng trong bộ nhớ sẽ dành cho các biến.</p><br/>
+                            <p>Biến là một thứ cực kì quan trọng trong lập trình mà không thể thiếu trong bất cứ chương trình lớn, nhỏ nào.</p><br/>
+                            <h3  id="taisaophaidungbien" style="color: #0000DD">TẠI SAO PHẢI DÙNG BIẾN?</h3><br/>
+                            <p>Biến giúp chúng ta lưu trữ các dữ liệu và cho phép chúng ta lấy các dữ liệu của chúng để tính toán được thuận tiện và chính xác hơn. Hãy tưởng tượng như sau, bạn có một số dữ liệu là những con số với nhiều chữ số và các thao tác tính toán (cộng 2 số): 123456789 + 987654321 = 1111111110 (rồi lại tiếp tục cộng) 123456789 + 123123123 = 246579912. Một điều mà các bạn dễ dàng nhận ra đó là những con số với nhiều chữ số gây khó khăn trong việc sử dụng vì chúng có quá nhiều chữ số, đôi lúc chúng ta cũng có thể vô tình gây sai lệnh giá trị.</p>
+                            <br/><p>Ta hãy giải quyết bài toán trên khi nhờ tới sự giúp đỡ của các biến.</p>
+                            <br/>
+                            <p>Ví dụ:</p>
+                                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">123456789</span>
+    y <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">987654321</span>
+    z <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">123123123</span>
+    sum1 <span style="color: #333333">=</span> x <span style="color: #333333">+</span> y
+    sum2 <span style="color: #333333">=</span> x <span style="color: #333333">+</span> z</pre></div>
+                            <br/><p>Kết quả của sum1 = 1111111110 và sum2 = 246579912.</p>
+                            <br/><p>Dễ thấy, ta cũng được kết quả tương tự, nhưng lại dễ dàng tính toán, giảm thiểu tỉ lệ sai lệnh giá trị hơn khi không sử dụng tới biến.</p>
+                            <br/>
+                            <h3  id="tenbien" style="color: #0000DD">NHỮNG THỨ CẦN BIẾT VỀ TÊN BIẾN</h3>
+                            <br/>
+                            <p>- Tên của biến không được bắt đầu bằng số.</p><br/>
+                            <p>- Tên biến không được trùng với các từ khóa của Python.</p><br/>
+                            <p>- Tên của biến chỉ chứa các chữ cái, số và ‘_’.</p><br/>
+                            <p>- Tên biến trong Python có phân biệt chữ in hoa và in thường. Ví dụ: PI, Pi, pI, pi là 4 tên biến khác nhau.</p><br/>
+                            <h3 id="khoitaobien" style="color: #0000DD">KHỞI TẠO BIẾN TRONG PYTHON.</h3>
+                            <br/><h4 style="color: #0000DD">CÚ PHÁP</h4>
+                            <br/><p><b>Khai báo một biến:</b></p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">     <span style="color: #333333">&lt;</span>tên biến<span style="color: #333333">&gt;</span> <span style="color: #333333">=</span> <span style="color: #333333">&lt;</span>giá trị<span style="color: #333333">&gt;</span></pre></div>
+                            <br/><p><b>Khai báo nhiều biến:</b></p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    a, b ,c ,d <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">30</span>, <span style="color: #0000DD; font-weight: bold">9</span>, <span style="color: #0000DD; font-weight: bold">20</span>, <span style="color: #0000DD; font-weight: bold">0</span>
+    <span style="color: #333333">/*</span>Tương ứng với<span style="color: #333333">*/</span>
+    a <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">30</span>
+    b <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">9</span>
+    c <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">20</span>
+    d <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+        
+        
+    a, b, c, d <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2000</span>
+    <span style="color: #333333">/*</span>Tương ứng với<span style="color: #333333">*/</span>
+    a <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2000</span>
+    b <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2000</span>
+    c <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2000</span>
+    d <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2000</span></pre></div>
+        
+                            <br/><p style="color:rgb(221, 63, 0)">Nếu bạn vẫn chưa hình dung ra được thì có thể xem đoạn video dưới đấy sẽ làm rõ hơn về cách sử dụng và đặt tến biến sao cho đúng.</p><br/>
+                            <video width="100%" height="auto" controls="controls" >
+                                <source src="assets/video/kieubien.mp4" type="video/mp4" >
+                            </video>
+                        </div>
+                        <div class="item2">
+                            <br/><h2 id="kieudulieu" style="color : #4fc08d">2. Một số kiểu dữ liệu cơ bản trong Python</h2><br/>
+                            <h3 id="songuyen" style="color:#0000DD">SỐ NGUYÊN</h3><br/>
+                            <p>Số nguyên bao gồm các số nguyên dương (1, 2, 3, ..), các số nguyên âm (-1, -2, -3) và số 0. Trong Python, kiểu dữ liệu số nguyên cũng không có gì khác biệt.</p>
+                            <br/>
+                            <p>Ví dụ: 113, -114, ...</p>
+                            <br/>
+                            <p>Ví dụ: Gán giá trị cho một biến a là 4 và xuất ra kiểu dữ liệu của a.</p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">4</span>
+    <span style="color: #008800; font-weight: bold">print</span>(x)</pre></div>
+                            <br/>
+                            <p>Kết quả sau khi in ra màn hình là 4. Ta chưa cần chú ý đến lệnh <i>print(x)</i> vội ta chỉ cần hiểu đơn giản là in ra màn hình và sẽ nó sẽ được nói kĩ trong phần tiếp theo.</p>  
+                            <br/>
+                            <p>Một điểm đáng chú ý trong Python 3.X đó là kiểu dữ liệu số nguyên là vô hạn. Điều này cho phép bạn tính toán với những số cực kì lớn, điều mà đa số các ngôn ngữ lập trình khác <b style="color:rgb(221, 63, 0)">KHÔNG THỂ</b>.</p>
+                            <br/><h3 id="sothuc" style="color:#0000DD">SỐ THỰC</h3>
+                            <br/>
+                            <p>Về kiểu dữ liệu số thực, thì đây là tập hợp các số nguyên và số thập phân 1, 1.4, -123, 69.96, ...</p>
+                            <br/>
+                            <p><b style="color:rgb(221, 63, 0)">Lưu ý</b> :  Thường khi chúng ta viết số thực, phần nguyên và phần thập phân được tách nhau bởi dấu phẩy ( , ). Thế nhưng trong Python, dấu phẩy ( , ) này được thay thế thành dấu chấm ( . ).</p>
+                            <br/>
+                            <p>Số thực trong Python có độ chính xác xấp xỉ 15 chữ số phần thập phân.</p>
+                            <br/>
+                            <p>Ví dụ: Số thực 10/3.</p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">3</span>
+    <span style="color: #008800; font-weight: bold">print</span>(x)</pre></div>
+                            <br/>
+                            <p>Kết quả khi in ra màn hình sẽ là: 3.3333333333333335.</p>
+                            <br/><h3 id="chuoi" style="color:#0000DD">CHUỖI(STRING).</h3>
+                            <br/><h4 style="color:rgb(50, 50, 165)">CHUỖI LÀ GI?</h3>
+                            <br/><p>Trong Python, chuỗi là những thứ được đặt trong cặp dấu ‘ ’, hoặc “ ”,  có thể cũng là trong cặp  ‘’’ ‘’’, “”” “””. Nhưng cơ bản và thường đường sử dụng nhất là cặp ‘ ‘ và “ “.</p>
+                            <br/><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    string1 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&#39;Say Hi&#39;</span>
+    <span style="color: #333333">/*</span>gán biến string1 với giá trị chuỗi với giá trị là 'Say Hi'<span style="color: #333333">*/</span>
+    string2 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Say Hello&quot;</span>
+    <span style="color: #333333">/*</span>gán biến string2 với giá trị chuỗi với giá trị là "Say Hello"<span style="color: #333333">*/</span></pre></div>
+                            <br/><br/><h4 style="color:rgb(50, 50, 165)">SỰ KHÁC NHAU GIỮA '' VÀ "".</h3>
+                            <br/><p>Thường khi nhắc đến chuỗi, ta hay nghĩ tới một dòng. Và khi đó, ta sử dụng cặp dấu ‘ ’ hoặc “ ”.  Nếu là nhiều dòng chuỗi kết nối với nhau, như những câu chữ  bạn hay viết trong những cuốn vở thì đó cũng là một chuỗi, nhưng chuỗi đó sẽ được đặt trong cặp dấu ‘’’ và “””.</p>
+                            <br/><p style="color:rgb(221, 63, 0)">Còn có thêm một số kiểu dữ liệu khác như: phân số, số phức,... Vì chúng ta đang học những thứ cơ bản nên chưa bận tâm đến những kiểu dữ liệu này.</p>
+                        </div>
+                        <div class="item2">
+                            <h2 id="cacpheptoan" style="color : #4fc08d">3. Các phép toán cơ bản trong Python</h2><br/>
+                            <h3 id="sohoc" style="color:rgb(50, 50, 165)">PHÉP TOÁN SỐ HỌC</h3>
+                            <br/><p>Cũng giống như các ngôn ngữ lập trình khác, Python sử dụng các phép cộng, trừ, nhân, chia với các số. Chúng ta thử ví dụ sau:</p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">3</span>
+    <span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">13</span>
+    <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">3</span>
+    <span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">7</span>
+    <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">*</span> <span style="color: #0000DD; font-weight: bold">3</span>
+    <span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">30</span>
+    <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">/</span> <span style="color: #0000DD; font-weight: bold">3</span>
+    <span style="color: #333333">&gt;&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">3</span>
+    <span style="color: #0000DD; font-weight: bold">10</span> <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">3</span>
+    <span style="color: #333333">&gt;&gt;&gt;</span><span style="color: #0000DD; font-weight: bold">1</span>
+    <span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">**</span><span style="color: #0000DD; font-weight: bold">4</span>
+    <span style="color: #333333">&gt;&gt;&gt;</span><span style="color: #0000DD; font-weight: bold">16</span></pre></div>
+        
+                            <br/><p>Dưới đây là bảng toán tử số học trong Python:</p>
+                            <img src="assets/images/toantu.png" width="100%"><br/>
+                            <br/><h3 id="toanchuoi" style="color:rgb(50, 50, 165)">PHÉP TOÁN VỚI CHUỖI(STRING) TRONG PYTHON.</h3>
+                            <br/><p>Python hỗ trợ việc nối các chuỗi bằng dấu cộng (+). Chúng ta hãy xem ví dụ này:</p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #007020">str</span> <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Say&quot;</span> <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;_&quot;</span> <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;Hi&quot;</span>
+    <span style="color: #333333">&gt;&gt;&gt;</span> Say_Hi</pre></div>
+                            <br/><p style="color:rgb(221, 63, 0)">Còn một số phép toán khác như: Sử dụng phép toán với danh sách (list), ... Ta sẽ tạm thời chưa nhắc đến ở đây.</p>
+                        </div>
+                        <div class="item2">
+                            <h2 id="xuat" style="color : #4fc08d">4. Xuất dữ liệu.</h2><br/>
+                            <h3 id="visaoprint" style="color:rgb(50, 50, 165)">VÌ SAO CẦN HÀM PRINT()?</h3>
+                            <br/><p>Nếu bạn hay dùng interactive prompt thì bạn nhân ra rằng, kết quả luôn xuất hiện sau mỗi dòng code của bạn. Tuy nhiên, nó sẽ không như vậy khi bạn viết những dòng code vào trong một file Python và chạy chương trình đó.</p>
+                            <br><p>Bạn cần một hàm giúp bạn xuất các nội dung mà bạn muốn cụ thể ở đây là xuất ra Shell (terminal, command prompt, powershell,…). Đó là lí do hàm print ra đời!</p>
+                            <br/><h3 id="cuphapprint" style="color:rgb(50, 50, 165)">CÚ PHÁP.</h3><br/>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #008800; font-weight: bold">print</span>(<span style="color: #333333">*</span>objects, sep<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39; &#39;</span>, end<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\n</span><span style="background-color: #fff0f0">&#39;</span>, <span style="color: #007020">file</span><span style="color: #333333">=</span>sys<span style="color: #333333">.</span>stdout, flush<span style="color: #333333">=</span><span style="color: #007020">False</span>)</pre></div>
+                            <br/><p><b>Ví dụ:</b></p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Hello World&quot;</span>)
+    <span style="color: #008800; font-weight: bold">print</span>(<span style="color: #0000DD; font-weight: bold">100</span>)</pre></div>
+                            <br/><p>Trên màn hình terminal sẽ hiển thị "Hello World" và "1".</p>
+                        </div>
+                        <div class="item2">
+                            <h2 id="nhap" style="color : #4fc08d">5. Nhập dữ liệu.</h2><br/>
+                            <h3 id="visaoinput" style="color:rgb(50, 50, 165)">VÌ SAO CẦN HÀM INPUT()?</h3>
+                            <br/><p>Có một ví dụ đơn giản khi ta viết một đoạn code:</p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    chao <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Say Hi&quot;</span>
+    <span style="color: #008800; font-weight: bold">print</span>(chao)</pre></div>
+                            <br><p>Nhưng bây giờ ta muốn chào kiểu khác như Hello thì nếu như vẫn giữ nguyên đoạn code trên thì nó chỉ có thể mãi mãi là Say Hi vậy nên chúng ta cần dùng lệnh input().</p>
+                            <br/><h3 id="cuphapinput" style="color:rgb(50, 50, 165)">CÚ PHÁP.</h3><br/>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #333333">&lt;</span>tên biến<span style="color: #333333">&gt;</span> <span style="color: #333333">=</span> <span style="color: #007020">input</span>()</pre></div>
+                            <br/><p><b>Ví dụ:</b></p>
+                            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    chao <span style="color: #333333">=</span> <span style="color: #007020">input</span>()
+    <span style="color: #008800; font-weight: bold">print</span>(chao)</pre></div>
+                            <br><p>Giả sử nếu ta nhập vào là hello thì trên màn hình terminal sẽ hiển thị "hello".</p>
+                        </div>
+                        <div class="item2">
+                            <h2 id="baitap" style="color : #4fc08d">6. Một số bài tập.</h2><br/>
+                            <h3 id="tracnghiem" style="color:rgb(50, 50, 165)">Bài tập trắc nghiệm</h3>
+                            <br><p>Bài 1. Đâu là cách đặt tiến biến đúng?</p>
+                            <br><p>A. Best*Yasou.</p>
+                            <p>B. Best_Yasou.</p>
+                            <p>C. Best Yasou.</p>
+                            <br><p>Bài 2. Đâu là kiểu dữ liệu string?</p>
+                            <br><p>A. 123.</p>
+                            <p>B. '1'.</p>
+                            <p>C. "123".</p>
+                            <br><p>Bài 3. Đâu là hàm nhập và hàm xuất?</p>
+                            <br><p>A. input() và print().</p>
+                            <p>B. print() và input().</p>
+                            <p>C. input() và output().</p>
+                            <br/><p style="color:rgb(221, 63, 0)">Kết quả: Bài1.B , Bài2.C , Bài3.A .</p>
+                            <h3 id="thuchanh" style="color:rgb(50, 50, 165)">Bài tập thực hành</h3>
+                            <br/><p>Bài 1. Viết lên chương trình tính tổng 2 số và tìm hiệu 2 số.</p>
+                            <br/><p>Bài 2. Viết lên chương trình tính diện tích hình chữ nhật với 2 cạnh a b bất kì nhập vào từ bản phím .</p>
+                            <br/><p>Bài 3. Viết lên chương trình in ra và lặp lại một chuỗi bất kì S nhập vào từ bàn phím 3 lần nhưng chỉ được sử dụng 1 lần hàm print().</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+<div class = "end">
+</div>
+</div>
+</body>
+</html>

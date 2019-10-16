@@ -1,0 +1,92 @@
+.main {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.main .container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.breadcrumb {
+    height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.breadcrumb * {
+    margin-right: 10px;
+}
+
+.breadcrumb-title {
+    font-weight: bold;
+}
+
+.breadcrumb a {
+    color: #000;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.menu-left {
+    margin-top: 100px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu-left a {
+    color: #000;
+}
+
+.menu-left .menu-sub-headings {
+    list-style-type: lower-alpha;
+}
+
+.menu-left .menu-headings {
+    margin-bottom: 20px;
+    list-style-type: decimal;
+}
+
+.menu-left .menu-headings > a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-left .menu-sub-headings li:first-child {
+    margin-top: 10px;
+}
+
+.menu-left .menu-sub-headings li {
+    margin-bottom: 10px;
+}
+
+.content {
+
+}
+
+.content-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-title h1 {
+    width: fit-content;
+    position: relative;
+}
+
+.content-title h1:after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    bottom: -20px;
+    height: 2px;
+    background-color: #42ff3e;
+}
